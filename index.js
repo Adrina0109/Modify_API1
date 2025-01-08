@@ -1,7 +1,8 @@
 const express = require('express');
 const { resolve } = require('path');
 const mongoose= require("mongoose");
-const { error } = require('console');
+const { 
+  error } = require('console');
 const dotenv=require("dotenv").config();
 
 
@@ -16,7 +17,7 @@ mongoose
   console.log("Connected Successfully");
 })
 .catch((error)=>{
-  console.log("Connection failes",error)
+  console.log("Connection failed",error)
 })
 
 const menuItemSchema= new mongoose.Schema({
